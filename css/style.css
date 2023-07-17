@@ -1,3 +1,7 @@
+html {
+    font-size: 0.8px;
+}
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -7,26 +11,28 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 960px;
+    padding: 0 15rem;
+    max-width: 960rem;
     background-color: white;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15rem;
+    padding: 25rem 0;
 }
 
 .header p {
     margin: 0;
     color: #39930d;
-    font-size: 22px;
+    font-size: 22rem;
 }
 
 .header i {
     color: #5a5a5a;
-    font-size: 14px;
+    font-size: 14rem;
 }
 
 .name {
@@ -35,11 +41,12 @@ body {
 
 .name b {
     display: block;
-    font-size: 44px;
+    font-size: 44rem;
 }
 
 .name img {
-    margin: 0 35px;
+    width: 100rem;
+    margin: 0 35rem;
 }
 
 .contact p {
@@ -52,35 +59,39 @@ body {
 }
 
 .main-img {
+    height: 200rem;
+    object-fit: cover;
+    object-position: 70% 0;
     width: 100%;
 }
 
 .main {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30rem;
 }
 
 .info {
-    max-width: 600px;
+    max-width: 600rem;
 }
 
 .info h1 {
     color: #39930d;
-    font-size: 24px;
+    font-size: 24rem;
 }
 
 .info p {
     color: #343434;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.5em;
 }
 
 .menu p {
-    padding: 11px 20px;
-    width: 300px;
+    padding: 11rem 20rem;
+    width: 300rem;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 18rem;
     background-color: #39930d;
 }
 
@@ -99,9 +110,9 @@ body {
 
 .menu a {
     display: block;
-    padding-left: 20px;
+    padding-left: 20rem;
     color: #39930d;
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 2.14em;
     text-decoration: underline;
     text-transform: uppercase;
@@ -109,16 +120,21 @@ body {
 }
 
 .menu li:hover>a {
-    margin-left: 5px;
+    margin-left: 5rem;
     color: #343434;
     text-decoration: none;
 }
 
 .copyright {
-    margin: 0 -15px;
-    padding: 14px 15px;
+    margin: 0 -15rem;
+    padding: 14rem 15rem;
     color: #fff;
-    font-size: 14px;
+    font-size: 14rem;
     background-color: #39930d;
 }
 
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+}
